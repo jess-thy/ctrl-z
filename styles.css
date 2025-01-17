@@ -1,0 +1,106 @@
+* {
+  font-family: "Inconsolata", serif;
+  text-align: center;
+  background-color: #3a3b3c;
+  color: #ccc;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+input,
+textarea {
+  background-color: #3a3b3c;
+  text-align: left;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  margin: 10px 0px 50px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea {
+  color: #ccc;
+  margin: 0px;
+}
+
+button {
+  background: #ccc;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+#circle-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.circle.outline {
+  background-color: transparent;
+}
+
+.circle.clicked {
+  background-color: #51fa5939;
+}
+
+#tracker {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
+#reset-button {
+  margin-top: 50px;
+}
+
+#streak-message {
+  color: rgb(197, 199, 71);
+}
+
+@media (max-width: 768px) {
+  #circle-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #circle-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

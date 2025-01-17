@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CTRL-Z</h1>
+
+      <div id="habit-form">
+        <label for="habit-name">What habit do you want to break?</label>
+        <input
+          type="text"
+          id="habit-name"
+          placeholder="Enter habit name"
+          required
+        />
+        <br />
+        <label for="habit-days">Days to maintain streak:</label>
+        <input
+          type="number"
+          id="habit-days"
+          placeholder="Enter number of days"
+          required
+        />
+        <br />
+        <button id="submit-button">Start Streak</button>
+      </div>
+
+      <div id="tracker">
+        <h2 id="habit-title"></h2>
+        <h3 id="streak-message"></h3>
+        <div id="circle-container"></div>
+        <button id="reset-button">Start New Streak</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
